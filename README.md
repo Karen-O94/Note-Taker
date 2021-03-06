@@ -22,7 +22,7 @@ There are no test packages on this app. However, you can use Chrome DevTools on 
 ## Usage 
 *Please click the link below to see the deployed app*
 
-[Note Taker]()
+[Note Taker](https://uob-note-taker.herokuapp.com/)
 
 After running `node server.js` within the command line, the `listen` function of the express package will notify you that the server is listening to the port specified. 
 
