@@ -33,7 +33,7 @@ app.post('/api/notes', (req, res) => {
     let savedNotes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
     let newNote = req.body;
 
-    //Generates unique ID for each object 
+    //Generates unique ID for each note object and then the new note is pushed into the savedNotes array
     let uniqueID = (savedNotes.length).toString();
     newNote.id = uniqueID;
     savedNotes.push(newNote);
@@ -48,9 +48,12 @@ app.delete('/api/notes/:id', function(req, res) {
     let noteID = req.params.id;
     let newID = 0;
 
+    //filter function creates a new array of notes with the deleted note filtered out 
     savedNotes = savedNotes.filter(specifiedNote => {
         return specifiedNote.id != noteID;
     })
+
+    //for of loop looks at all the notes in db.json and assigns new ID after a note is deleted. 
     for (specifiedNote of savedNotes) {
         specifiedNote.id = newID.toString();
         newID++;
