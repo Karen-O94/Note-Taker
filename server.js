@@ -28,16 +28,14 @@ app.get('/api/notes/:id', (req, res) => {
     res.json(savedNotes[Number(req.params.id)]);
 });
 
-
+//This function 
 app.post('/api/notes', (req, res) => {
-    // req.body hosts is equal to the JSON post sent from the user
-    // This works because of our body parsing middleware
     let savedNotes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
     let newNote = req.body;
 
-    //unique ID for each object 
-    let userID = (savedNotes.length).toString();
-    newNote.id = userID;
+    //Generates unique ID for each object 
+    let uniqueID = (savedNotes.length).toString();
+    newNote.id = uniqueID;
     savedNotes.push(newNote);
     //newNote.title = newNote.title.replace(/\s+/g, '').toLowerCase();
     fs.writeFileSync('./db/db.json',JSON.stringify(savedNotes));
