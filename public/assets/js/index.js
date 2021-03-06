@@ -4,16 +4,6 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
-//Adding event listener to start button on index.html
-let startBtn = document.querySelector('#startBtn');
-startBtn.addEventListener("click", () => {
-  function redirect(){
-    var url = "notes.html";
-    window.location(url);
-    }
-    redirect();
-})
-
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
@@ -69,6 +59,9 @@ const renderActiveNote = () => {
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
   } else {
+    //remove the readonly attribute
+    noteTitle.removeAttribute('readonly');
+    noteText.removeAttribute('readonly');
     noteTitle.value = '';
     noteText.value = '';
   }
@@ -188,5 +181,3 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
-
-app.listen(PORT, () => console.log(`Listening on: http://localhost:${PORT}`))
