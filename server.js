@@ -55,7 +55,7 @@ app.delete('/api/notes/:id', function(req, res) {
         return specifiedNote.id != noteID;
     })
     for (specifiedNote of savedNotes) {
-        specifiedNote.id = newID.toString();
+        specifiedNote.id = newID.toString;
         newID++;
     }
     fs.writeFileSync('./db/db.json',JSON.stringify(savedNotes));
