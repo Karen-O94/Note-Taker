@@ -34,7 +34,7 @@ If you wish to delete the note you have written, click on the delete button and 
 
 You can also view saved notes by clicking the title in the side-nav. If you wish to add a new note, you will need to click the pencil icon to this.
 
-You can see the json object being populated or modified by specifiying the following route name in your browser: `localhost:3000/api/notes`
+You can see the json object being populated or modified by specifiying the following route name in your browser: `localhost:3000/api/notes` and adding the id parameter using `/idNumber'` will take you to json file for a specific note
 
 *Command line*
 ![image](https://user-images.githubusercontent.com/74797740/110217124-4f01f300-7eaa-11eb-9c42-bbe8487135f7.png)
