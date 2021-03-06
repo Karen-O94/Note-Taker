@@ -15,6 +15,8 @@ In order to render this app, you will need to run `npm i express` in order to in
 
 The express package will give you access to a series of methods to `GET` and `POST` information from the API object created from user inputs. 
 
+You will also need to specify a port number. In this app we have used `3000` but you can use any PORT that works well with Node applications. 
+
 Once express is installed, you can initialise the application itself by running `node server.js` in the command line
 
 ## Test
@@ -22,14 +24,13 @@ There are no test packages on this app. However, you can use Chrome DevTools on 
 
 ## Usage 
 
-![TeamProfileGeneratorSpeedUpComp](https://user-images.githubusercontent.com/74797740/109427845-1ebede00-79ec-11eb-8539-a796572718f6.gif)
+*sample gif of deployed app*
 
+*Please click the link below to see the deployed app*
 
-*Please see the video walkthrough for this application below*
+[Note Taker]()
 
-[Google Drive Link to video walkthrough](https://drive.google.com/file/d/10iobRitOcP7DmR6Hh00mCIL196Ea_wcB/view?usp=sharing)
-
-After running `node index.js` within the command line, the inquirer package will prompt users to answer a series of questions based on their team. 
+After running `node server.js` within the command line, the `listen` function of the express package will notify you that the server is listening to the port specified. 
 
 The application takes in the user's reponses and populates the input fields of the its corresponding HTML element.  For example,`${data.github}` is populated with the Engineer's github username
 
