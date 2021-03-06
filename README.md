@@ -3,7 +3,7 @@ An application called Note Taker that can be used to write and save notes
 
 ## Screenshots
 *Command line*
-![image](https://user-images.githubusercontent.com/74797740/109425458-36906500-79e0-11eb-999b-a67681f9cb0a.png)
+![image]()
 
 ![image]()
 
@@ -40,14 +40,9 @@ If you wish to delete the note you have written, click on the delete button and 
 
 You can see the json object being populated or modified by specifiying the following route name in your browser: `localhost:3000/api/notes`
 
-## Final Product
-The generated HTML file should contain the following:
+## Challenges
 
-    - Navbar with team name
-    - Generates a card for each team member with their name, their role and id
-    - Manager should also have an office number
-    - Engineer should have a github username
-    - Intern should also a school name
+## Built With
 
 ## License
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
