@@ -50,7 +50,7 @@ app.delete('/api/notes/:id', function(req, res) {
     let noteID = req.params.id;
     let newID = 0;
 
-    savedNotes = saveNotes.filter(specifiedNote => {
+    savedNotes = savedNotes.filter(specifiedNote => {
         return specifiedNote.id != noteID;
     })
     for (specifiedNote of savedNotes) {
@@ -61,4 +61,4 @@ app.delete('/api/notes/:id', function(req, res) {
     res.json(savedNotes);
 });
 
-app.listen(PORT, () => console.log(`Listening on: http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`Hey!!You are currently listening on: http://localhost:${PORT}`))
