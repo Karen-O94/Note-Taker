@@ -32,7 +32,7 @@ Click on the 'Get Started' button and this will take you to the notes page (`loc
 
 If you wish to delete the note you have written, click on the delete button and it will remove the note from the page as well as the json file it is stored in. 
 
-You can also view saved notes by clicking the title in the side-nav.
+You can also view saved notes by clicking the title in the side-nav. If you wish to add a new note, you will need to click the pencil icon to this.
 
 You can see the json object being populated or modified by specifiying the following route name in your browser: `localhost:3000/api/notes`
 
