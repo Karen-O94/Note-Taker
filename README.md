@@ -1,14 +1,11 @@
 # Note-Taker
-An application called Note Taker that can be used to write and save notes
+An application can be used to write, save and delete notes
 
-## Screenshots
-*Command line*
-![image]()
-
-![image]()
-
+## Screenshots of App in Use
 *Generated Sample HTML file*
-![image]()
+![image](https://user-images.githubusercontent.com/74797740/110216984-891ec500-7ea9-11eb-84cb-405f59f5d2f2.png)
+
+![image](https://user-images.githubusercontent.com/74797740/110217050-edda1f80-7ea9-11eb-90c9-b61b83ff9a1e.png)
 
 ## Installation
 In order to render this app, you will need to run `npm i express` in order to install the 'express' package dependencies as specified in the package.json.
@@ -23,9 +20,6 @@ Once express is installed, you can initialise the application itself by running 
 There are no test packages on this app. However, you can use Chrome DevTools on your browser or run the server.js file in your command line to ensure there are no errors. 
 
 ## Usage 
-
-*sample gif of deployed app*
-
 *Please click the link below to see the deployed app*
 
 [Note Taker]()
@@ -40,9 +34,12 @@ If you wish to delete the note you have written, click on the delete button and 
 
 You can see the json object being populated or modified by specifiying the following route name in your browser: `localhost:3000/api/notes`
 
-## Challenges
+*Command line*
+![image](https://user-images.githubusercontent.com/74797740/110217124-4f01f300-7eaa-11eb-9c42-bbe8487135f7.png)
 
-## Built With
+*API object*
+![image](https://user-images.githubusercontent.com/74797740/110217101-398cc900-7eaa-11eb-939d-785e7e44aaee.png)
+
 
 ## License
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -50,3 +47,13 @@ You can see the json object being populated or modified by specifiying the follo
 > This project was created under the standard MIT licence.
 
 > [Learn more about this licence.](https://lbesson.mit-license.org/)
+
+## Questions?
+
+Please contact me on the links below if you have any queries on how the application works or to view my other projects:
+
+My GitHub username is Karen-O94 
+
+Link to GitHub Profile: https://github.com/Karen-O94
+
+Email:  karen@email.com
